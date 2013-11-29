@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block body %}
+	{% for entry in entry %}
+		<h3>{{ entry.title }}</h3>
+		<div class=main>{{ entry.text }}</div>
+	{% endfor %}
+{% endblock %}
